@@ -1,0 +1,348 @@
+body {
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+h1 {
+    color: #105282;
+}
+
+h3 {
+    margin-top: -1%;
+    padding: 2%;
+    background-color: #ffde59;
+}
+
+h4 {
+    margin: 0;
+}
+
+
+
+/******* PAGE ACCUEIL *******/
+.reseaux {
+    text-align: right;
+    height: 6vh;
+    background-color: #105282;
+}
+
+.reseaux a {
+    text-decoration: none;
+    color: white;
+    padding: 1.3vh;
+    font-size: 20px;
+    line-height: 6vh;
+}
+
+.icon-facebook:before { 
+    content: '\f09a'; 
+}
+
+.icon-twitter:before { 
+    content: '\f099'; 
+}
+
+.icon-pinterest:before { 
+    content: '\f231'; 
+}
+
+.icon-youtube:before { 
+    content: '\f167'; 
+}
+
+.icon-mail:before { 
+    content: '\e800'; 
+}
+
+.icon-facebook:hover {
+    background-color: #3b5998; 
+}
+
+.icon-twitter:hover { 
+    background-color: #00acee; 
+}
+
+.icon-pinterest:hover { 
+    background-color: #c8232c; 
+}
+
+.icon-youtube:hover { 
+    background-color:  #c4302b;
+}
+
+.icon-mail:hover {
+    background-color: #ffde59;
+}
+
+header nav:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    background-color: #146ca6;
+}
+
+header nav:nth-child(2) img {
+    width: 50%;
+    border-radius: 20em;
+}
+
+
+header nav:nth-child(2) a {
+    width: 30%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav:nth-child(2) a:hover {
+    color: #ffde59;
+}
+
+header div {
+    width: 100%;
+}
+
+header div img{
+    width: 100%;
+    height: 60vh;
+}
+
+.section-main {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+
+.section-main div {
+    width: 33%;
+    margin: 3%;
+}
+
+
+
+.section2 {
+    width: 95%;
+    margin: auto;
+    padding: 1%;
+    background-color: #ffde59;
+}
+
+.div-principale {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+
+.section2 div div:nth-child(2) {
+    width: 30%;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .section-main {
+        flex-direction: column;
+    }
+    .section-main div {
+        width: 90%;
+        margin: auto;
+        
+    }
+    .div-principale {
+        flex-direction: column;
+       
+    }
+    .section2 div div:nth-child(2) {
+        width: 40%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    h3 {
+        
+        font-size: 10px;
+    }
+}
+.section2 a {
+    display: block;
+    text-decoration: none;
+   width: 30%;
+   margin: auto;
+    padding: 5%;
+    background-color: #146ca6;
+    color: white;
+}
+
+.section3 {
+    margin-top: 2%;
+    background-color: #146ca6;
+}
+
+.section-flex1 {
+    padding: 1% 0;
+}
+
+.section-flex1 div {
+    display: flex;
+    justify-content: space-around;  
+}
+
+
+
+.section3 section div article {
+    width: 30%;
+}
+
+@media screen and (max-width: 500px) {
+    .section-flex1 div {
+        flex-direction: column; 
+    }
+    .section3 section div article {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.section3 section div article img {
+    width: 100%;
+}
+
+footer {
+    background-color: #105282;
+    margin: 0;
+    padding: 2%;
+    
+    color: white;
+    
+}
+
+footer p {
+    margin-bottom: 3%;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 1%;
+    background-color: #444;
+    color: white;
+}
+
+footer a:hover {
+   
+    background-color: #ffde59;
+    color: black;
+}
+
+
+/****** PAGE CONNEXION ****/
+
+form {
+    width: 80%;
+    margin: 2% auto;
+    
+}
+
+fieldset {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #ffde59;
+}
+
+legend {
+    padding: 1%;
+    text-align: left;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+input {
+    margin: 1%;
+    height: 4vh;
+}
+
+
+form div input {
+    display: inline-block;
+    width: 30%;
+    
+}
+
+
+input[type="submit"] {
+    display:block;
+    width: 30%;
+    padding: 1%;
+    height: 6vh;
+    margin: auto;
+    background-color: #146ca6;
+    color: white;
+}
+
+main p {
+    display: inline-block;
+    margin: 0 1% 2%;
+    color: gray;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+main p a {
+    text-decoration: none;
+    color: #3e7da7;
+}
+
+main p a:hover {
+    text-decoration: underline;
+    color: #ffde59;
+}
+
+@media screen and (max-width: 770px) {
+    form {
+        width: 100%;
+        margin: 2% auto;  
+    }
+    form div input {
+        display: block;
+        width: 50%;
+        margin: 1% auto;
+        
+    }
+}
+
+/****PROFIL ***/
+
+.main-profil-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+.main-profil-header img {
+    width: 10%;
+    margin: 1%;
+}
+
+
+
+
+
+
+
+
+
+
