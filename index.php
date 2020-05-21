@@ -1,8 +1,11 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="src/img/logo.png" />
     <link rel="stylesheet" href="src/fontello/css/fontello.css">
     <link rel="stylesheet" href="src/CSS/styles.css">
     <title>Accueil</title>
@@ -10,19 +13,27 @@
 <body>
     <header>
         <nav class="reseaux">
-            <a href="#"class="icon-facebook"></a>
+            <a href="#" class="icon-facebook"></a>
             <a href="#" class="icon-pinterest"></a>
             <a href="#" class="icon-youtube"></a>
-            <a href="#"class="icon-twitter"></a>
+            <a href="#" class="icon-twitter"></a>
             <a href="#" class="icon-mail"></a>
         </nav>
         <nav >
-            <a href="accueil.php"><img src="src/img/logo.png" alt="Logo" title="Retour à l'accueil"></a>
+            <a href="index.php"><img src="src/img/logo.png" alt="Logo" title="Retour à l'accueil"></a>
             <a href="#">Le blog</a>
             <a href="#">Aquarium débutant</a>
-            <a href="">Les bassins</a>
-            <a href="">Les accessoires</a>
-            <a href="">Se connecter</a>
+            <a href="#">Les bassins</a>
+            <a href="#">Les accessoires</a>
+            <?php if (!empty($_SESSION['login'])) :?>
+                <?php if ($_SESSION['login'] =="admin") :?>
+                    <a href="admin.php">Admin</a>
+                <?php endif ;?>
+                <a href="profil.php">Mon compte</a>
+                
+            <?php else :?>
+                <a href="connexion.php">Se connecter</a>
+            <?php endif ;?>
         </nav>
         <div>
             <img src="src/img/aquarium.jpg" alt="Photo aquarium">
@@ -51,8 +62,8 @@
             <h1>L’aquariophilie</h1>
            <div class="div-principale">
                <div>
-                    <p>L’aquariophilie vous tente mais vous ne savez pas par où commencer ?</p>
-                    <p>Découvrez notre guide “Aquarium débutant” pour vous guider pas à pas de l’achat du matériel à l’acclimatation des poissons.</p>
+                    <p class="main-p">L’aquariophilie vous tente mais vous ne savez pas par où commencer ?</p>
+                    <p class="main-p">Découvrez notre guide “Aquarium débutant” pour vous guider pas à pas de l’achat du matériel à l’acclimatation des poissons.</p>
                </div>
                <div>
                     <a href="#">Débuter</a>
@@ -81,18 +92,10 @@
         </section>
     </main>
     <footer>
-        
-        
             <h4>Qui sommes nous ?</h4>
             <p>Aquarium  est un blog aquariophiles qui prend le partie de la modernité pour rajeunir notre passion et susciter de nouvelles vocations chez les plus jeunes.</p>
 
             <a href="#">Nous contacter</a>
-       
-        
-        
-      
     </footer>
-
-    
 </body>
 </html>
