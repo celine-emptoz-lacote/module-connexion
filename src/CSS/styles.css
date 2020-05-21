@@ -1,8 +1,7 @@
 body {
     max-width: 1400px;
     margin: auto;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 h1 {
@@ -18,8 +17,6 @@ h3 {
 h4 {
     margin: 0;
 }
-
-
 
 /******* PAGE ACCUEIL *******/
 .reseaux {
@@ -82,6 +79,7 @@ header nav:nth-child(2) {
     align-items: center;
     padding: 1%;
     background-color: #146ca6;
+    white-space: nowrap;
 }
 
 header nav:nth-child(2) img {
@@ -89,12 +87,21 @@ header nav:nth-child(2) img {
     border-radius: 20em;
 }
 
-
 header nav:nth-child(2) a {
     width: 30%;
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+@media screen and ( max-width: 620px){
+    header nav:nth-child(2) {
+        flex-direction: column;
+    }
+    
+    header nav:nth-child(2) a {
+       margin: 1%;
+    } 
 }
 
 header nav:nth-child(2) a:hover {
@@ -116,13 +123,10 @@ header div img{
     text-align: left;
 }
 
-
 .section-main div {
     width: 33%;
     margin: 3%;
 }
-
-
 
 .section2 {
     width: 95%;
@@ -136,7 +140,6 @@ header div img{
     justify-content: space-evenly;
     text-align: left;
 }
-
 
 .section2 div div:nth-child(2) {
     width: 30%;
@@ -162,13 +165,13 @@ header div img{
     }
 }
 
-
 @media screen and (min-width: 501px) and (max-width: 800px) {
     h3 {
         
         font-size: 10px;
     }
 }
+
 .section2 a {
     display: block;
     text-decoration: none;
@@ -192,8 +195,6 @@ header div img{
     display: flex;
     justify-content: space-around;  
 }
-
-
 
 .section3 section div article {
     width: 30%;
@@ -274,18 +275,17 @@ form div input {
     
 }
 
-
 input[type="submit"] {
-    display:block;
+    display:inline-block;
     width: 30%;
     padding: 1%;
     height: 6vh;
-    margin: auto;
+    margin: 2% auto;
     background-color: #146ca6;
     color: white;
 }
 
-main p {
+.main-p {
     display: inline-block;
     margin: 0 1% 2%;
     color: gray;
@@ -337,6 +337,35 @@ main p a:hover {
     margin: 1%;
 }
 
+/*** ADMIN ****/
+
+table {
+    width: 80%;
+    margin: 3% auto;
+    border-collapse: collapse;
+    
+}
+
+th,td{
+    border: 2px solid #146ca6;
+    height: 5vh;
+    text-align: center;
+}
+
+th {
+    background-color: #ffde59;
+}
+
+button {
+    padding: 1%;
+    background-color: #146ca6;
+    color: white;
+}
+
+#poubelle {
+   width: 50%;
+   background-color: #c4302b;
+}
 
 
 
