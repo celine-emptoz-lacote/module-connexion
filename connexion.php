@@ -40,7 +40,7 @@ mysqli_close($bd);
     <link rel="icon" type="image/png" href="src/img/logo.png" />
     <link rel="stylesheet" href="src/fontello/css/fontello.css">
     <link rel="stylesheet" href="src/CSS/styles.css">
-    <title>Accueil</title>
+    <title>Connexion</title>
 </head>
 <body>
     <header>
