@@ -45,10 +45,10 @@ mysqli_close($bd);
 <body>
     <header>
         <nav class="reseaux">
-            <a href="#" class="icon-facebook"></a>
-            <a href="#" class="icon-pinterest"></a>
-            <a href="#" class="icon-youtube"></a>
-            <a href="#" class="icon-twitter"></a>
+            <a href="https://fr-fr.facebook.com/" class="icon-facebook"></a>
+            <a href="https://www.pinterest.fr/" class="icon-pinterest"></a>
+            <a href="https://www.youtube.com/" class="icon-youtube"></a>
+            <a href="https://twitter.com/" class="icon-twitter"></a>
             <a href="#" class="icon-mail"></a>
         </nav>
         <nav >
